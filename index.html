@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumo ao ENEM 2026 | Guia do Estudante</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Bar & Banner de Saudação -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo-area">
+                <div class="logo-badge"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div>
+                    <h1 class="logo-title">Rumo ao ENEM <span>2026</span></h1>
+                    <p class="logo-sub">Plataforma de Estudos Intensivos & Simulados Oficiais</p>
+                </div>
+            </div>
+
+            <!-- Contador Regressivo Simbólico ENEM 2026 -->
+            <div class="countdown-card">
+                <i class="fa-regular fa-clock"></i>
+                <div>
+                    <span class="countdown-label">Foco no Objetivo</span>
+                    <span class="countdown-value">ENEM 2026</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Banner de Saudação do Estudante de 16 Anos -->
+        <section class="greeting-banner">
+            <div class="container greeting-content">
+                <div class="greeting-text">
+                    <div class="greeting-badge">
+                        <i class="fa-solid fa-graduation-cap"></i> ENEM 2026
+                    </div>
+                    <h2>Olá! Pronto para estudar?</h2>
+                    <p>
+                        Criei este espaço completo para organizar a nossa rotina do zero até a aprovação. Aqui tem todo o conteúdo de <strong>Linguagens (Português a Inglês/Espanhol)</strong>, <strong>Humanas</strong>, <strong>Natureza</strong> e <strong>Matemática</strong>, um guia definitivo para cravar a <strong>Redação Nota 1000</strong> e uma ferramenta para <strong>gerar as provas de teste oficiais</strong> com os critérios reais de 1º e 2º dia. Vamos juntos conquistar essa vaga na faculdade dos sonhos!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Barra de Navegação das 3 Abas Principais Destacadas -->
+        <nav class="main-nav">
+            <div class="container">
+                <div class="tabs-wrapper" role="tablist">
+                    <button class="nav-tab active" data-tab="study-content" role="tab" aria-selected="true">
+                        <i class="fa-solid fa-book-bookmark"></i>
+                        <span>Conteúdo para estudar</span>
+                    </button>
+                    <button class="nav-tab" data-tab="essay-content" role="tab" aria-selected="false">
+                        <i class="fa-solid fa-pen-nib"></i>
+                        <span>Conteúdo para Redação</span>
+                    </button>
+                    <button class="nav-tab" data-tab="exam-content" role="tab" aria-selected="false">
+                        <i class="fa-solid fa-file-circle-check"></i>
+                        <span>Prova de Teste</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal Dinâmico -->
+    <main class="main-content container">
+
+        <!-- Banner de Aviso Solicitado -->
+        <div class="disclaimer-alert">
+            <div class="disclaimer-icon">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+            <div class="disclaimer-text">
+                <strong>Atenção!</strong> Este site foi criado para apenas lhe ajudar, mas não substituir completamente os estudos, é recomendado ver aulas e lirvos para ir mais afundo.
+            </div>
+        </div>
+        
+        <!-- ================= ABA 1: CONTEÚDO PARA ESTUDAR ================= -->
+        <section id="study-content" class="tab-pane active">
+            <div class="section-intro">
+                <div class="intro-header">
+                    <h2><i class="fa-solid fa-compass"></i> Guia Completo de Matérias do ENEM</h2>
+                    <p>De Português e Matemática a Inglês e Espanhol: o que mais cai e como o exame cobra cada disciplina.</p>
+                </div>
+
+                <!-- Barra de Busca e Filtro de Áreas -->
+                <div class="study-filters">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="subject-search" placeholder="Pesquise por matéria, fórmula ou assunto (ex: Funções, Ecologia, Vargas)...">
+                    </div>
+                    <div class="area-chips">
+                        <button class="chip active" data-area="all">Todas as Áreas</button>
+                        <button class="chip" data-area="linguagens"><i class="fa-solid fa-book-open"></i> Linguagens & Códigos</button>
+                        <button class="chip" data-area="humanas"><i class="fa-solid fa-landmark"></i> Ciências Humanas</button>
+                        <button class="chip" data-area="natureza"><i class="fa-solid fa-dna"></i> Ciências da Natureza</button>
+                        <button class="chip" data-area="matematica"><i class="fa-solid fa-calculator"></i> Matemática</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grade de Conteúdos por Matéria -->
+            <div class="study-grid" id="study-cards-container">
+                <!-- Inserido dinamicamente via JS -->
+            </div>
+
+            <!-- Cronograma Intensivo Rápido -->
+            <div class="study-tips-card">
+                <div class="tips-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                <div class="tips-body">
+                    <h3>Minha estratégia de sobrevivência como estudante de 16 anos:</h3>
+                    <ul>
+                        <li><strong>Regra do TRI:</strong> Questões fáceis de Matemática básica e Interpretação valem muito mais do que tentar acertar só as difíceis e errar as fáceis por descuido.</li>
+                        <li><strong>Treine com cronômetro:</strong> No dia da prova você tem cerca de <strong>3 minutos por questão</strong> e 1 hora para a redação.</li>
+                        <li><strong>Escolha do Idioma:</strong> Na prova você opta por Inglês ou Espanhol. Espanhol tem muitos falsos amigos (*embarazada*, *exquisito*), e Inglês foca em leitura instrumental de notícias.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ABA 2: CONTEÚDO PARA REDAÇÃO ================= -->
+        <section id="essay-content" class="tab-pane">
+            <div class="section-intro">
+                <div class="intro-header">
+                    <h2><i class="fa-solid fa-feather-pointed"></i> Como Construir uma Redação Nota 1000</h2>
+                    <p>A redação vale 20% da sua nota total no ENEM. Domine o esqueleto perfeito, as 5 competências e repertórios coringas!</p>
+                </div>
+            </div>
+
+            <!-- 5 Competências do ENEM -->
+            <div class="competencies-banner">
+                <h3 class="subsection-title"><i class="fa-solid fa-award"></i> As 5 Competências Avaliadas (0 a 1000 pontos)</h3>
+                <div class="competencies-grid" id="competencies-container">
+                    <!-- Gerado via JS -->
+                </div>
+            </div>
+
+            <!-- Estrutura dos 4 Parágrafos -->
+            <div class="essay-structure-section">
+                <h3 class="subsection-title"><i class="fa-solid fa-cubes"></i> A Fórmula dos 4 Parágrafos Infalíveis</h3>
+                <div class="structure-grid" id="structure-container">
+                    <!-- Gerado via JS -->
+                </div>
+            </div>
+
+            <!-- Os 5 Elementos da Proposta de Intervenção -->
+            <div class="intervention-box">
+                <div class="intervention-header">
+                    <span class="badge-tag">Competência 5 Obrigatória</span>
+                    <h3>Os 5 Elementos da Proposta de Intervenção (Garante 200 pontos!)</h3>
+                    <p>Sua conclusão DEVE responder a estas cinco perguntas fundamentais:</p>
+                </div>
+                <div class="intervention-elements">
+                    <div class="element-card">
+                        <span class="element-num">1</span>
+                        <h4>Agente</h4>
+                        <p><strong>Quem vai fazer?</strong><br>Ministério da Educação, Poder Público, ONGs, Família, Sociedade Civil.</p>
+                    </div>
+                    <div class="element-card">
+                        <span class="element-num">2</span>
+                        <h4>Ação</h4>
+                        <p><strong>O que será feito?</strong><br>Criar projetos, reformar currículos, expandir fiscalizações e campanhas.</p>
+                    </div>
+                    <div class="element-card">
+                        <span class="element-num">3</span>
+                        <h4>Meio / Modo</h4>
+                        <p><strong>Como será feito?</strong><br>Por meio de oficinas escolares, mediante remanejamento de verbas orçamentárias.</p>
+                    </div>
+                    <div class="element-card">
+                        <span class="element-num">4</span>
+                        <h4>Detalhamento</h4>
+                        <p><strong>Explicação extra de um dos elementos:</strong><br>Explicar especificamente como o agente atuará ou qual o diferencial da medida.</p>
+                    </div>
+                    <div class="element-card">
+                        <span class="element-num">5</span>
+                        <h4>Efeito</h4>
+                        <p><strong>Para que serve?</strong><br>A fim de atenuar a desigualdade e assegurar a plena cidadania preconizada na Carta Magna.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repertórios Coringas & Conectivos -->
+            <div class="repertory-and-connectives">
+                <div class="connectives-column">
+                    <h3 class="subsection-title"><i class="fa-solid fa-link"></i> Conectivos Essenciais</h3>
+                    <div class="connectives-list" id="connectives-container">
+                        <!-- Gerado via JS -->
+                    </div>
+                </div>
+                <div class="sample-essay-column">
+                    <h3 class="subsection-title"><i class="fa-solid fa-star"></i> Exemplo Real Analisado (Nota 1000)</h3>
+                    <div class="sample-essay-box" id="sample-essay-container">
+                        <!-- Gerado via JS -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Laboratório Prático de Redação (Simulador de Rascunho com Contador de Linhas) -->
+            <div class="essay-lab-section">
+                <div class="lab-header">
+                    <div class="lab-title">
+                        <i class="fa-solid fa-keyboard"></i>
+                        <div>
+                            <h3>Simulador de Rascunho de Redação</h3>
+                            <p>Treine sua escrita com limite de 30 linhas oficial do ENEM e conferência das 5 competências.</p>
+                        </div>
+                    </div>
+                    <div class="lab-topic-selector">
+                        <label for="topic-select">Escolha o Tema:</label>
+                        <select id="topic-select">
+                            <!-- Preenchido via JS -->
+                        </select>
+                    </div>
+                </div>
+
+                <div class="topic-info-box" id="topic-info-display">
+                    <!-- Tema exibido dinamicamente -->
+                </div>
+
+                <div class="editor-area">
+                    <div class="editor-toolbar">
+                        <span id="line-counter"><i class="fa-solid fa-bars-staggered"></i> Linhas: <strong>0 / 30</strong> (Mínimo: 7)</span>
+                        <span id="word-counter"><i class="fa-solid fa-file-lines"></i> Palavras: <strong>0</strong></span>
+                        <button class="btn-clean" id="btn-clear-essay"><i class="fa-solid fa-eraser"></i> Limpar Rascunho</button>
+                    </div>
+                    <textarea id="essay-draft" placeholder="Comece aqui sua introdução... (Dica: apresente o tema com repertório e declare sua tese com 2 causas centrais)"></textarea>
+                    
+                    <div class="draft-actions">
+                        <button class="btn-primary" id="btn-grade-essay"><i class="fa-solid fa-wand-magic-sparkles"></i> Analisar Estrutura do Rascunho</button>
+                    </div>
+
+                    <div id="essay-feedback" class="feedback-card hidden">
+                        <!-- Retorno da avaliação rápida do rascunho -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ABA 3: PROVA DE TESTE ================= -->
+        <section id="exam-content" class="tab-pane">
+            <div class="section-intro">
+                <div class="intro-header">
+                    <h2><i class="fa-solid fa-laptop-file"></i> Simulador Oficial do ENEM</h2>
+                    <p>Treine sob as regras e critérios idênticos aos aplicados pelo INEP nos dois dias de aplicação.</p>
+                </div>
+            </div>
+
+            <!-- Critérios Oficiais dos Dias de Prova (45 Questões) -->
+            <div class="exam-criteria-cards">
+                <div class="day-spec-card" id="card-day1">
+                    <div class="card-badge day1-badge">1º DIA DE PROVA • 45 QUESTÕES</div>
+                    <div class="day-duration"><i class="fa-regular fa-clock"></i> <strong>5 horas e 30 minutos</strong> (330 min)</div>
+                    <ul class="day-specs-list">
+                        <li><i class="fa-solid fa-circle-check"></i> <strong>45 questões no total:</strong> Linguagens (Português, Literatura, Artes, Ed. Física e Inglês/Espanhol) e Ciências Humanas (História, Geografia, Filosofia e Sociologia).</li>
+                        <li><i class="fa-solid fa-circle-check"></i> <strong>1 Redação</strong> dissertativa-argumentativa (0 a 1.000 pontos).</li>
+                        <li><i class="fa-solid fa-circle-info"></i> Resumo detalhado de performance por matéria ao concluir.</li>
+                    </ul>
+                    <button class="btn-start-exam" data-day="day1">
+                        <i class="fa-solid fa-play"></i> Iniciar Prova do 1º Dia (45 Questões)
+                    </button>
+                </div>
+
+                <div class="day-spec-card" id="card-day2">
+                    <div class="card-badge day2-badge">2º DIA DE PROVA • 45 QUESTÕES</div>
+                    <div class="day-duration"><i class="fa-regular fa-clock"></i> <strong>5 horas</strong> (300 min)</div>
+                    <ul class="day-specs-list">
+                        <li><i class="fa-solid fa-circle-check"></i> <strong>45 questões no total:</strong> Ciências da Natureza (Biologia, Física e Química) e Matemática e suas Tecnologias.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Foco em raciocínio lógico, interpretação de gráficos e equações.</li>
+                        <li><i class="fa-solid fa-circle-info"></i> Diagnóstico automático apontando qual matéria você precisa estudar mais.</li>
+                    </ul>
+                    <button class="btn-start-exam" data-day="day2">
+                        <i class="fa-solid fa-play"></i> Iniciar Prova do 2º Dia (45 Questões)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Painel de Execução da Prova (Inicialmente Oculto ou Ativado) -->
+            <div id="active-exam-container" class="exam-runner hidden">
+                <!-- Barra Superior do Exame: Informações e Cronômetro Flutuante -->
+                <div class="exam-topbar">
+                    <div class="exam-info">
+                        <span class="active-day-tag" id="exam-day-title">1º DIA DE PROVA</span>
+                        <div class="language-choice" id="language-choice-box">
+                            <label for="lang-select">Língua Estrangeira:</label>
+                            <select id="lang-select">
+                                <option value="en">Inglês</option>
+                                <option value="es">Espanhol</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Cronômetro Oficial Regressivo -->
+                    <div class="timer-display">
+                        <i class="fa-solid fa-stopwatch"></i>
+                        <span id="exam-timer">05:30:00</span>
+                        <div class="timer-controls">
+                            <button id="btn-pause-timer" title="Pausar / Retomar tempo"><i class="fa-solid fa-pause"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="exam-actions-top">
+                        <button class="btn-danger-outline" id="btn-abandon-exam"><i class="fa-solid fa-arrow-left"></i> Sair da Prova</button>
+                        <button class="btn-success" id="btn-finish-exam"><i class="fa-solid fa-paper-plane"></i> Finalizar e Ver Gabarito</button>
+                    </div>
+                </div>
+
+                <!-- Barra de Progresso e Navegador de Questões -->
+                <div class="exam-navigation-bar">
+                    <div class="progress-container">
+                        <div class="progress-label">
+                            <span>Questões respondidas: <strong id="answered-count">0</strong> de <span id="total-questions-count">0</span></span>
+                            <span id="progress-percent">0%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" id="exam-progress-bar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="questions-quick-nav" id="questions-nav-pills">
+                        <!-- Pílulas numeradas das questões geradas via JS -->
+                    </div>
+                </div>
+
+                <!-- Área de Exibição das Questões -->
+                <div class="exam-questions-list" id="exam-questions-container">
+                    <!-- Cards de questões renderizados aqui -->
+                </div>
+
+                <!-- Se for o 1º Dia: Aba de Proposta de Redação Integrada da Prova -->
+                <div id="exam-essay-section" class="exam-essay-proposal hidden">
+                    <div class="proposal-card">
+                        <div class="proposal-header">
+                            <i class="fa-solid fa-file-pen"></i>
+                            <div>
+                                <h3>PROPOSTA DE REDAÇÃO - 1º DIA (0 a 1.000 Pontos)</h3>
+                                <p>Instruções oficiais do ENEM: redija um texto dissertativo-argumentativo em norma-padrão de até 30 linhas.</p>
+                            </div>
+                        </div>
+                        <div class="proposal-theme-display" id="exam-proposal-theme">
+                            <!-- Preenchido via JS -->
+                        </div>
+                        <div class="exam-essay-input-area">
+                            <textarea id="exam-essay-text" rows="12" placeholder="Digite sua redação final aqui... Não se esqueça de apresentar proposta de intervenção com os 5 elementos ao concluir."></textarea>
+                            <span class="exam-essay-counter" id="exam-essay-lines">Linhas aproximadas: 0 / 30</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botão Flutuante de Entrega -->
+                <div class="exam-bottom-submit">
+                    <button class="btn-success-large" id="btn-bottom-finish">
+                        <i class="fa-solid fa-check-double"></i> Concluir Prova & Gerar Relatório de Desempenho
+                    </button>
+                </div>
+            </div>
+
+            <!-- Modal / Área de Resultados e Gabarito Comentado -->
+            <div id="exam-results-container" class="exam-results-modal hidden">
+                <div class="results-card">
+                    <div class="results-header">
+                        <div class="trophy-icon"><i class="fa-solid fa-trophy"></i></div>
+                        <h2>Resultado do seu Simulado ENEM!</h2>
+                        <p id="results-day-label">Simulado Oficial</p>
+                    </div>
+
+                    <div class="score-summary-grid">
+                        <div class="score-card">
+                            <span class="score-number" id="result-score-percent">0%</span>
+                            <span class="score-label">Aproveitamento</span>
+                        </div>
+                        <div class="score-card">
+                            <span class="score-number" id="result-correct-count">0</span>
+                            <span class="score-label">Acertos</span>
+                        </div>
+                        <div class="score-card">
+                            <span class="score-number" id="result-wrong-count">0</span>
+                            <span class="score-label">Erros / Em Branco</span>
+                        </div>
+                        <div class="score-card">
+                            <span class="score-number" id="result-estimated-tri">0</span>
+                            <span class="score-label">Estimativa TRI (Pontos)</span>
+                        </div>
+                    </div>
+
+                    <div class="results-analysis" id="results-analysis-text">
+                        <!-- Mensagem com conselhos do estudante de 16 anos -->
+                    </div>
+
+                    <!-- Resumo de Desempenho por Matéria -->
+                    <div class="performance-summary-section">
+                        <h3><i class="fa-solid fa-chart-pie"></i> Desempenho por Matéria</h3>
+                        <p class="section-subtext">Veja quantas questões você acertou em cada disciplina individual da prova:</p>
+                        <div class="subject-performance-grid" id="subject-performance-container">
+                            <!-- Inserido dinamicamente via JS -->
+                        </div>
+                    </div>
+
+                    <!-- Diagnóstico de Estudos: Qual Matéria Estudar Mais -->
+                    <div class="study-diagnosis-section">
+                        <div class="diagnosis-header">
+                            <i class="fa-solid fa-bullhorn"></i>
+                            <div>
+                                <h3>Diagnóstico Personalizado: Qual Matéria Estudar Mais?</h3>
+                                <p>Identificamos as disciplinas em que seu aproveitamento foi mais baixo para você priorizar nos estudos:</p>
+                            </div>
+                        </div>
+                        <div class="diagnosis-cards-list" id="diagnosis-recommendations-container">
+                            <!-- Inserido dinamicamente via JS com botões para ir direto ao conteúdo -->
+                        </div>
+                    </div>
+
+                    <!-- Gabarito Detalhado com Resoluções -->
+                    <div class="detailed-solutions">
+                        <h3><i class="fa-solid fa-list-check"></i> Gabarito Oficial & Resolução Comentada de Cada Questão</h3>
+                        <div class="solutions-list" id="solutions-list-container">
+                            <!-- Inserido via JS -->
+                        </div>
+                    </div>
+
+                    <div class="results-actions">
+                        <button class="btn-primary" id="btn-restart-exam"><i class="fa-solid fa-rotate-right"></i> Fazer Outro Simulado</button>
+                        <button class="btn-secondary" id="btn-back-to-study"><i class="fa-solid fa-book"></i> Revisar Conteúdos</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p><i class="fa-solid fa-graduation-cap"></i> Projeto ENEM 2026 • Criado por um estudante de 16 anos para todos que buscam a vaga dos sonhos na universidade pública.</p>
+            <p class="footer-sub">"Não importa quando você começou, o que define a sua aprovação é a constância a partir de hoje."</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -39,6 +39,10 @@ out/
 .idea/
 *.sublime-project
 *.sublime-workspace
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
 
 # Arquivos do Sistema Operacional
 .DS_Store
