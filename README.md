@@ -6,6 +6,11 @@ Projeto desenvolvido no curso Brilha Mais.
 
 * `.gitignore`: Regras para proteção de dados sensíveis e exclusão de arquivos desnecessários.
 * `README.md`: Documentação inicial do repositório.
+* `LICENSE`: Licença de uso e distribuição MIT.
+
+## 📄 Licença
+
+Este projeto está sob a licença [MIT](LICENSE).
 
 ## 🚀 Como executar
 
